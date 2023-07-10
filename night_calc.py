@@ -9,7 +9,7 @@ from astroplan import Observer
 from datetime import datetime, timezone
 from astropy.coordinates import EarthLocation, Angle
 
-warnings.filterwarnings("ignore")
+warnings.filterwarnings('ignore')
 
 __script_name__ = basename(sys.argv[0])
 __script_desc__ = "Retrieve Night duration, astronomical LSTs from both twilights "
