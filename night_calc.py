@@ -61,8 +61,8 @@ if __name__ == '__main__':
     t80s_obs = Observer(location=t80s_EL, timezone=T80S_TZ)
     t80s_Time_mn = t80s_obs.midnight(t80s_Time)
     moon_illum = t80s_obs.moon_illumination(t80s_Time_mn)
-    twilight_morning = t80s_obs.twilight_morning_astronomical(t80s_Time_mn, which='nearest').datetime 
-    twilight_evening = t80s_obs.twilight_evening_astronomical(t80s_Time_mn, which='nearest').datetime 
+    twilight_morning = t80s_obs.twilight_morning_astronomical(t80s_Time, which='nearest').datetime 
+    twilight_evening = t80s_obs.twilight_evening_astronomical(t80s_Time, which='nearest').datetime 
     night_duration = (twilight_morning - twilight_evening).total_seconds()/3600
     lst_even = t80s_obs.local_sidereal_time(twilight_evening)
     lst_morn = t80s_obs.local_sidereal_time(twilight_morning)
