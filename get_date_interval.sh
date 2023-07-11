@@ -1,6 +1,6 @@
 d=$1
 DF=$2
-echo "#DT_EVEN_UTC,LST_EVEN,DT_MORN_UTC,LST_MORN,NIGHT_DUR,MOON_ILLUM"
+echo "#NIGHT_DUR,DT_EVEN_UTC,LST_EVEN,DT_MORN_UTC,LST_MORN,DT_MIDN,LST_MIDN,MOON_ILLUM_MIDN"
 while [ "$d" != "$DF" ]
 do
     python3 night_calc.py $d --csv | grep -v '^#'
