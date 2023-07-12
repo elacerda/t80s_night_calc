@@ -7,7 +7,6 @@ Usage
 -----
 
 **night_calc.py** usage:
-
     usage: night_calc.py [-h] [--csv] [--local_midnight] YYYY-MM-DD
 
     Retrieve T80-South site night duration, astronomical LSTs from both near twilights (evening and morning) and Moon illumination at the sun midnight.
@@ -21,13 +20,12 @@ Usage
       --local_midnight, -M  Uses local midnight instead the sun midnight for the moon illumination calculation.
 
 **get_date_interval.sh** usage:
-
     usage: bash get_date_interval.sh INIDATE FINDATE
-
 *INIDATE* and *FINDATE* must be at *YYYY-MM-DD* format. Last date will be *FINDATE* - 1 day.
 
 Examples
 --------
+
 ```bash
     $ python3 night_calc.py 2023-01-01
     Night duration: 6.75 hours
@@ -41,6 +39,7 @@ Examples
         DATETIME (UTC): 2023-01-02 04:47:02.012401
         LST: 6h50m05.60860765s
         Moon illumination: 0.8032
+
     $ python3 night_calc.py 2023-01-01 --csv
     #NIGHT_DUR,DT_EVEN_UTC,LST_EVEN,DT_MORN_UTC,LST_MORN,DT_MIDN,LST_MIDN,MOON_ILLUM_MIDN
     6.754956576944445,2023-01-02 01:24:23.207661,3h26m53.51370588s,2023-01-02 08:09:41.051338,10h13m17.93840088s,2023-01-02 04:47:02.012401,6h50m05.60860765s,0.8032165343009382
