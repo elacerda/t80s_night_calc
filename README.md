@@ -21,6 +21,7 @@ Usage
 
 **get_date_interval.sh** usage:
     usage: bash get_date_interval.sh INIDATE FINDATE
+    
 *INIDATE* and *FINDATE* must be at *YYYY-MM-DD* format. Last date will be *FINDATE* - 1 day.
 
 Examples
